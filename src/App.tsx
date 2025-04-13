@@ -2,11 +2,6 @@ import './App.css';
 import { ModalContent } from './components/Modal';
 import TreeNode from './components/TreeNode';
 
-const buildingIconSrc = "img/icons/apartments.png";
-const newspaperIconSrc = "img/icons/newspaper.png";
-const blueprintIconSrc = "img/icons/blueprint.png";
-const permitIconSrc = "img/icons/approve.png";
-
 function App() {
 
   return (
