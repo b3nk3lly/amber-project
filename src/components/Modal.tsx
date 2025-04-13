@@ -19,7 +19,7 @@ export function ModalContent({ title, descriptions, imageSources }: Readonly<Mod
                     {imageSources.map((src) => <img key={src} src={src} />)}
                 </div>
             }
-            {descriptions?.map((description, index) => <p key={`${title}-desc-${index}`} className="m-6 w-4/5">{description}</p>)}
+            {descriptions?.map((description, index) => <p key={`${title}-desc-${index}`} className="m-6">{description}</p>)}
         </>
     );
 }
@@ -29,7 +29,7 @@ export default function Modal({ isOpen, onClose, children }: Readonly<ModalProps
         <>
             {isOpen && (
                 <div className="fixed inset-0 bg-black/25 bg-opacity-50 flex items-center justify-center z-50" onClick={onClose}>
-                    <div className="fixed bg-white rounded-2xl shadow-xl p-6 max-h-96 overflow-y-auto" onClick={(e) => e.stopPropagation()}>
+                    <div className="fixed bg-white rounded-2xl shadow-xl p-6 max-w-200 max-h-128 overflow-y-auto" onClick={(e) => e.stopPropagation()}>
                         <div className="flex flex-col items-center space-y-4">
                             {children}
                             <div className="flex justify-center">
