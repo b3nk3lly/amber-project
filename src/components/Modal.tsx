@@ -6,20 +6,20 @@ interface ModalProps {
 
 interface ModalContentProps {
     title: string;
-    description: string;
-    imageSources: string[];
+    descriptions?: string[];
+    imageSources?: string[];
 }
 
-export function ModalContent({ title, description, imageSources }: Readonly<ModalContentProps>) {
+export function ModalContent({ title, descriptions, imageSources }: Readonly<ModalContentProps>) {
     return (
         <>
-            <div className="bg-white z-10">
-                <h2 className="text-xl font-semibold mb-4 text-center">{title}</h2>
-            </div>
-            <div className="flex flex-wrap items-center space-x-8 space-y-8 w-full">
-                {imageSources.map((src) => <img key={src} src={src} />)}
-            </div>
-            {description && (<p className="m-6">{description}</p>)}
+            <h2 className="text-xl font-semibold mb-4 text-center">{title}</h2>
+            {
+                imageSources && <div className="flex flex-wrap justify-center items-center space-x-8 space-y-8">
+                    {imageSources.map((src) => <img key={src} src={src} />)}
+                </div>
+            }
+            {descriptions?.map((description, index) => <p key={`${title}-desc-${index}`} className="m-6 w-4/5">{description}</p>)}
         </>
     );
 }
@@ -29,7 +29,7 @@ export default function Modal({ isOpen, onClose, children }: Readonly<ModalProps
         <>
             {isOpen && (
                 <div className="fixed inset-0 bg-black/25 bg-opacity-50 flex items-center justify-center z-50" onClick={onClose}>
-                    <div className="fixed bg-white rounded-2xl shadow-xl p-6 min-w-128 max-w-256 h-96 overflow-y-auto" onClick={(e) => e.stopPropagation()}>
+                    <div className="fixed bg-white rounded-2xl shadow-xl p-6 max-h-96 overflow-y-auto" onClick={(e) => e.stopPropagation()}>
                         <div className="flex flex-col items-center space-y-4">
                             {children}
                             <div className="flex justify-center">

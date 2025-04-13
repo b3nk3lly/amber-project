@@ -16,39 +16,11 @@ function App() {
         <div className="flex flex-col items-center space-y-4">
           {/* leaves row 1 */}
           <div className="flex flex-row justify-evenly w-3/5">
-            <TreeNode icon={permitIconSrc}>
-              <ModalContent title="Application" description="This is..." imageSources={["img/permits/application.jpeg"]} />
-            </TreeNode>
-            <TreeNode icon={permitIconSrc}>
-              <ModalContent title="Permit" description="This is..." imageSources={["img/permits/permit-1.jpeg"]} />
-            </TreeNode>
-            <TreeNode icon={permitIconSrc}>
-              <ModalContent title="Permit" description="This is..." imageSources={["img/permits/permit-2.jpeg"]} />
-            </TreeNode>
-            <TreeNode icon={permitIconSrc}>
-              <ModalContent title="Permit" description="This is..." imageSources={["img/permits/permit-3.jpeg"]} />
-            </TreeNode>
-            <TreeNode icon={permitIconSrc}>
-              <ModalContent title="Permit" description="This is..." imageSources={["img/permits/permit-4.jpeg"]} />
-            </TreeNode>
+
           </div>
           {/* leaves row 2 */}
           <div className="flex flex-row justify-between w-3/5">
-            <TreeNode icon={permitIconSrc}>
-              <ModalContent title="Permit" description="This is..." imageSources={["img/permits/permit-5.jpeg"]} />
-            </TreeNode>
-            <TreeNode icon={permitIconSrc}>
-              <ModalContent title="Permit" description="This is..." imageSources={["img/permits/permit-6.jpeg"]} />
-            </TreeNode>
-            <TreeNode icon={permitIconSrc}>
-              <ModalContent title="Permit" description="This is..." imageSources={["img/permits/permit-7.jpeg"]} />
-            </TreeNode>
-            <TreeNode icon={permitIconSrc}>
-              <ModalContent title="Permit" description="This is..." imageSources={["img/permits/permit-8.jpeg"]} />
-            </TreeNode>
-            <TreeNode icon={permitIconSrc}>
-              <ModalContent title="Permit" description="This is..." imageSources={["img/permits/permit-9.jpeg"]} />
-            </TreeNode>
+
           </div>
         </div>
       </div>
@@ -57,39 +29,11 @@ function App() {
         <div className="flex ml-112 mr-60 space-x-4">
           {/* trunk column 1 */}
           <div className="flex flex-col justify-between h-full">
-            <TreeNode icon={newspaperIconSrc}>
-              <ModalContent title="Newspaper Clipping" description="This is..." imageSources={["img/newspaper/clipping-1.jpg"]} />
-            </TreeNode>
-            <TreeNode icon={newspaperIconSrc}>
-              <ModalContent title="Newspaper Clipping" description="This is..." imageSources={["img/newspaper/clipping-2.jpg"]} />
-            </TreeNode>
-            <TreeNode icon={newspaperIconSrc}>
-              <ModalContent title="Newspaper Clipping" description="This is..." imageSources={["img/newspaper/clipping-3.jpg"]} />
-            </TreeNode>
-            <TreeNode icon={newspaperIconSrc}>
-              <ModalContent title="Newspaper Article" description="This is..." imageSources={["img/newspaper/article-1.jpg"]} />
-            </TreeNode>
-            <TreeNode icon={newspaperIconSrc}>
-              <ModalContent title="Newspaper Article" description="This is..." imageSources={["img/newspaper/article-2.jpg"]} />
-            </TreeNode>
+
           </div>
           {/* trunk column 2 */}
           <div className="flex flex-col justify-between h-full">
-            <TreeNode icon={blueprintIconSrc}>
-              <ModalContent title="Blueprints" description="This is..." imageSources={["img/blueprints/blueprint-1.jpg"]} />
-            </TreeNode>
-            <TreeNode icon={blueprintIconSrc}>
-              <ModalContent title="Blueprints" description="This is..." imageSources={["img/blueprints/blueprint-2.jpg"]} />
-            </TreeNode>
-            <TreeNode icon={blueprintIconSrc}>
-              <ModalContent title="Blueprints" description="This is..." imageSources={["img/blueprints/blueprint-3.jpg"]} />
-            </TreeNode>
-            <TreeNode icon={blueprintIconSrc}>
-              <ModalContent title="Blueprints" description="This is..." imageSources={["img/blueprints/blueprint-4.jpg"]} />
-            </TreeNode>
-            <TreeNode icon={blueprintIconSrc}>
-              <ModalContent title="Blueprints" description="This is..." imageSources={["img/blueprints/blueprint-5.jpg"]} />
-            </TreeNode>
+
           </div>
         </div>
       </div>
@@ -98,36 +42,125 @@ function App() {
         <div className="flex flex-col items-center space-y-4">
           {/* roots row 1 */}
           <div className="flex flex-row justify-between w-full">
-            <TreeNode icon={buildingIconSrc}>
-              <ModalContent title="Elevator" description="This is the elavator" imageSources={["img/building/elevator-1.jpg", "img/building/elevator-2.jpg", "img/building/elevator-5.jpg"]} />
+            <TreeNode label="1">
+              <ModalContent
+                title="First Records (going earliest to the beginning of construction)"
+                descriptions={["The Mi'kmaq have been in Nova Scotia since time immemorial. Halifax was originally referred to as Kjipuktuk by the Mi'kmaq people."]}
+              />
             </TreeNode>
-            <TreeNode icon={buildingIconSrc}>
-              <ModalContent title="Fire Plan" description="This is the fire plan" imageSources={["img/building/fire-plan.jpeg"]} />
+            <TreeNode label="3">
+              <ModalContent
+                title="First Records (going earliest to the beginning of construction)"
+                descriptions={
+                  [
+                    "The map from 1827 shows Halifax and gives us some context. The street at the bottom is the road to Fort Massey Church (presently known as Queen Street). Fort Massey is an important landmark, as Church Street eventually joins St. Luke's and Fort Massey. Based on this, we can infer the location where St. Luke's would be built, although this map does not show any buildings at that time. A disclaimer here: this map may not be entirely accurate since Tobin Street does not appear, even though it is visible on the earlier 1749 map, although unnamed.",
+                    "Although no buildings are shown, some may have been constructed. By 1758, the land that included Lot 8 was under the ownership of Benjamin Green, though whether he purchased it or if it was redistributed to him by the crown is unclear."
+                  ]}
+                imageSources={["img/roots/fig-2.png"]}
+              />
             </TreeNode>
-            <TreeNode icon={buildingIconSrc}>
-              <ModalContent title="Aerial Shot" description="This is..." imageSources={["img/building/aerial.jpeg"]} />
+            <TreeNode label="5">
+              <ModalContent
+                title="First Records (going earliest to the beginning of construction)"
+                descriptions={
+                  [
+                    "By 1844, Saint Luke's Chapel of Ease was built on this land. A chapel of ease is a church constructed in a more convenient location. The official Saint Luke's Cathedral was erected sometime between 1847 and 1848, depending on the source. St. Luke's was an Anglican church that stood in this spot for 57 years before it burned down in 1905.",
+                    "The church can be seen in the background of this photo, taken in 1872 from the Belle Vue Tennis Court, prior to December 1905."
+                  ]}
+                imageSources={["img/roots/fig-4.png"]}
+              />
             </TreeNode>
-            <TreeNode icon={buildingIconSrc}>
-              <ModalContent title="Spatz" description="This is..." imageSources={["img/building/spatz.jpeg"]} />
+            <TreeNode label="7">
+              <ModalContent
+                title="First Records (going earliest to the beginning of construction)"
+                descriptions={
+                  [
+                    "This is a photo taken from the Belle Vue Estate in 1872 with the church in the back right."
+                  ]}
+                imageSources={["img/roots/fig-6.png"]}
+              />
             </TreeNode>
-            <TreeNode icon={buildingIconSrc}>
-              <ModalContent title="Entrance" description="This is..." imageSources={["img/building/entrance.jpeg"]} />
+
+            <TreeNode label="9">
+              <ModalContent
+                title="First Records (going earliest to the beginning of construction)"
+                descriptions={
+                  [
+                    "Another interior shot c. 1890."
+                  ]}
+                imageSources={["img/roots/fig-8.png"]}
+              />
+            </TreeNode>
+
+            <TreeNode label="11">
+              <ModalContent
+                title="First Records (going earliest to the beginning of construction)"
+                descriptions={
+                  [
+                    "On December 14th, 1905, at 1:00 AM, St. Luke's fire alarm went off, signaling a fire. By 3:00 AM, the church's steeple had collapsed, and the fire eventually burned itself out. Miraculously, no one was killed, but the fire was believed to be incendiary—likely caused by arson. Further research needs to be done into whether an investigation was open and if anyone was subsequently charged.",
+                    "Following the fire, All Saint's Cathedral was built about 500m west of the remains of St. Luke's as a replacement. It is likely that the lot remained vacant until 1920, when the Westminster Apartments were constructed."
+                  ]}
+                imageSources={["img/roots/fig-10.jpg"]}
+              />
             </TreeNode>
           </div>
           {/* roots row 2 */}
           <div className="flex flex-row justify-evenly w-full">
-            <TreeNode icon={buildingIconSrc}>
-              <ModalContent title="Frame" description="This is..." imageSources={["img/building/frame-1.jpeg", "img/building/frame-2.jpeg"]} />
+            <TreeNode label="2">
+              <ModalContent
+                title="First Records (going earliest to the beginning of construction)"
+                descriptions={
+                  [
+                    "The earliest available records of Halifax date back to 1749. The image above shows a map of the South Suburbs of Halifax from that year. By cross-referencing this map with modern Google Maps, it appears that Church Street likely ran through Lots 6 and 7, which were originally allotted to Robert Davis and John Butler, respectively.",
+                    "It's important to note that neither Church Street nor Harvey Street existed at the time, so this is an educated guess based on the available records.",
+                    "The lots of greatest interest are Lots 8 and 9, as these are likely where St. Luke's Cathedral was eventually built.",
+                    "While the land was initially allotted to Davis and Butler, this does not necessarily mean they settled on the land. This distinction is important when analyzing later maps of the area."
+                  ]}
+                imageSources={["img/roots/fig-1.png"]}
+              />
             </TreeNode>
-            <TreeNode icon={buildingIconSrc}>
-              <ModalContent title="Hallway" description="This is..." imageSources={["img/building/hallway-1.jpeg", "img/building/hallway-2.jpeg"]} />
+            <TreeNode label="4">
+              <ModalContent
+                title="First Records (going earliest to the beginning of construction)"
+                descriptions={
+                  [
+                    "Benjamin Green was Nova Scotia's first treasurer and owned many properties throughout the province. When he died in 1772, his property was not divided among his children until 1827, due to the lack of specific instructions in his will. His heirs drew straws for the land, and his son, Henry Green, received Lots 8 and 9.",
+                    "The probate record from July 2nd, 1827, shows the division of Green's properties. The properties marked 'H' refer to Lots 8 and 9, inherited by Henry Green."
+                  ]}
+                imageSources={["img/roots/fig-3.png"]}
+              />
             </TreeNode>
-            <TreeNode icon={buildingIconSrc}>
-              <ModalContent title="Sides" description="This is..." imageSources={["img/building/side-1.jpeg", "img/building/side-2.jpeg"]} />
+            <TreeNode label="6">
+              <ModalContent
+                title="First Records (going earliest to the beginning of construction)"
+                descriptions={
+                  [
+                    "This is another image of St. Luke's from the Belle Vue Estate, taken around 1900, roughly five years before it burned down. "
+                  ]}
+                imageSources={["img/roots/fig-5.png"]}
+              />
             </TreeNode>
-            <TreeNode icon={buildingIconSrc}>
-              <ModalContent title="Exterior" description="This is..." imageSources={["img/building/exterior.jpeg"]} />
+            <TreeNode label="8">
+              <ModalContent
+                title="First Records (going earliest to the beginning of construction)"
+                descriptions={
+                  [
+                    "This is an interior view of the church c. pre-1905"
+                  ]}
+                imageSources={["img/roots/fig-7.png"]}
+              />
             </TreeNode>
+            <TreeNode label="10">
+              <ModalContent
+                title="First Records (going earliest to the beginning of construction)"
+                descriptions={
+                  [
+                    "This is an interior shot of a wedding ceremony, before 1905."
+                  ]}
+                imageSources={["img/roots/fig-9.png"]}
+              />
+            </TreeNode>
+
           </div>
         </div>
       </div>
