@@ -45,7 +45,7 @@ function App() {
             </TreeNode>
             <TreeNode label="3">
               <ModalContent
-                title="First Records (going earliest to the beginning of construction)"
+                title="1827 Map of Halifax"
                 descriptions={
                   [
                     "The map from 1827 shows Halifax and gives us some context. The street at the bottom is the road to Fort Massey Church (presently known as Queen Street). Fort Massey is an important landmark, as Church Street eventually joins St. Luke's and Fort Massey. Based on this, we can infer the location where St. Luke's would be built, although this map does not show any buildings at that time. A disclaimer here: this map may not be entirely accurate since Tobin Street does not appear, even though it is visible on the earlier 1749 map, although unnamed.",
@@ -56,7 +56,7 @@ function App() {
             </TreeNode>
             <TreeNode label="5">
               <ModalContent
-                title="First Records (going earliest to the beginning of construction)"
+                title="Saint Luke's Cathedral"
                 descriptions={
                   [
                     "By 1844, Saint Luke's Chapel of Ease was built on this land. A chapel of ease is a church constructed in a more convenient location. The official Saint Luke's Cathedral was erected sometime between 1847 and 1848, depending on the source. St. Luke's was an Anglican church that stood in this spot for 57 years before it burned down in 1905.",
@@ -67,7 +67,7 @@ function App() {
             </TreeNode>
             <TreeNode label="7">
               <ModalContent
-                title="First Records (going earliest to the beginning of construction)"
+                title="St. Luke's on Clear Day (1872)"
                 descriptions={
                   [
                     "This is a photo taken from the Belle Vue Estate in 1872 with the church in the back right."
@@ -78,7 +78,7 @@ function App() {
 
             <TreeNode label="9">
               <ModalContent
-                title="First Records (going earliest to the beginning of construction)"
+                title="1890"
                 descriptions={
                   [
                     "Another interior shot c. 1890."
@@ -89,7 +89,7 @@ function App() {
 
             <TreeNode label="11">
               <ModalContent
-                title="First Records (going earliest to the beginning of construction)"
+                title="'Burned,' - 1905"
                 descriptions={
                   [
                     "On December 14th, 1905, at 1:00 AM, St. Luke's fire alarm went off, signaling a fire. By 3:00 AM, the church's steeple had collapsed, and the fire eventually burned itself out. Miraculously, no one was killed, but the fire was believed to be incendiary—likely caused by arson. Further research needs to be done into whether an investigation was open and if anyone was subsequently charged.",
@@ -103,7 +103,7 @@ function App() {
           <div className="flex flex-row justify-evenly w-full">
             <TreeNode label="2">
               <ModalContent
-                title="First Records (going earliest to the beginning of construction)"
+                title="1749 Map of South Suburbs, in Halifax."
                 descriptions={
                   [
                     "The earliest available records of Halifax date back to 1749. The image above shows a map of the South Suburbs of Halifax from that year. By cross-referencing this map with modern Google Maps, it appears that Church Street likely ran through Lots 6 and 7, which were originally allotted to Robert Davis and John Butler, respectively.",
@@ -116,7 +116,7 @@ function App() {
             </TreeNode>
             <TreeNode label="4">
               <ModalContent
-                title="First Records (going earliest to the beginning of construction)"
+                title="After Benjamin Green, Before St. Luke's (1772-1827)"
                 descriptions={
                   [
                     "Benjamin Green was Nova Scotia's first treasurer and owned many properties throughout the province. When he died in 1772, his property was not divided among his children until 1827, due to the lack of specific instructions in his will. His heirs drew straws for the land, and his son, Henry Green, received Lots 8 and 9.",
@@ -127,7 +127,7 @@ function App() {
             </TreeNode>
             <TreeNode label="6">
               <ModalContent
-                title="First Records (going earliest to the beginning of construction)"
+                title="St. Luke's in Winter (c. 1900)"
                 descriptions={
                   [
                     "This is another image of St. Luke's from the Belle Vue Estate, taken around 1900, roughly five years before it burned down. "
@@ -137,7 +137,7 @@ function App() {
             </TreeNode>
             <TreeNode label="8">
               <ModalContent
-                title="First Records (going earliest to the beginning of construction)"
+                title=""
                 descriptions={
                   [
                     "This is an interior view of the church c. pre-1905"
@@ -147,7 +147,7 @@ function App() {
             </TreeNode>
             <TreeNode label="10">
               <ModalContent
-                title="First Records (going earliest to the beginning of construction)"
+                title="Wedding Ceremony"
                 descriptions={
                   [
                     "This is an interior shot of a wedding ceremony, before 1905."
