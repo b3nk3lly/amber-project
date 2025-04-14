@@ -21,8 +21,8 @@ function App() {
         </div>
       </div>
       {/* trunk */}
-      <div className="w-full h-[35%] py-4 flex">
-        <div className="flex ml-112 mr-60 space-x-4">
+      <div className="w-full h-[35%] py-4 flex justify-center">
+        <div className="flex space-x-4 mx-auto">
           {/* trunk column 1 */}
           <div className="flex flex-col justify-between h-full">
             <TreeNode label="1">
