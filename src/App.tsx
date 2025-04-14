@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="bg-[url(/big-tree.png)] w-[1024px] h-[1536px] bg-center bg-no-repeat" style={{ backgroundSize: "100% 100%" }}>
       {/* leaves */}
-      <div id="leaves" className="w-full h-[30%] px-16 pt-24">
+      <div id="leaves" className="w-full h-[20%] px-16 pt-24">
         <div className="flex flex-col items-center space-y-4">
           {/* leaves row 1 */}
           <div className="flex flex-row justify-evenly w-3/5">
@@ -21,8 +21,20 @@ function App() {
           </div>
         </div>
       </div>
+      <div className="flex flex-col w-3/5 mx-auto items-center bg-gray-400/50 rounded-2xl shadow-sm py-4">
+        <h1 className="text-xl font-bold px-4 w-full text-white text-center">
+          The Westminster Apartments:
+        </h1>
+        <h2 className="text-lg font-bold px-4 w-full text-white text-center">
+          a Brief Land, Building, and Community History Timeline
+        </h2>
+        <h3 className="text-md font-semibold px-4 py-2 w-full text-white text-center">
+          Click a bubble to learn more.
+        </h3>
+      </div>
+
       {/* trunk */}
-      <div className="w-full h-[35%] py-4 flex justify-center">
+      <div className="w-full h-[35%] flex justify-center">
         <div className="w-[20%] flex flex-col justify-center max-h-full">
           <DiagonalRow first={
             <TreeNode label="16">
@@ -245,7 +257,7 @@ function App() {
         </div>
       </div>
       {/* roots */}
-      <div className="w-full h-[30%] px-40 my-16">
+      <div className="w-full h-[30%] px-40 my-8">
         <div className="flex flex-col items-center space-y-4">
           {/* roots row 1 */}
           <div className="flex flex-row justify-between w-full">
