@@ -1,4 +1,5 @@
 import './App.css';
+import DiagonalRow from './components/DiagonalRow';
 import Figure from './components/Figure';
 import { ModalContent } from './components/Modal';
 import TreeNode from './components/TreeNode';
@@ -22,9 +23,76 @@ function App() {
       </div>
       {/* trunk */}
       <div className="w-full h-[35%] py-4 flex justify-center">
-        <div className="flex space-x-4 mx-auto">
-          {/* trunk column 1 */}
-          <div className="flex flex-col justify-between h-full">
+        <div className="w-[20%] flex flex-col justify-center max-h-full">
+          <DiagonalRow first={
+            <TreeNode label="1">
+              <ModalContent
+                title="Building Permit (March 1920)"
+              />
+            </TreeNode>
+          }
+            second={
+              <TreeNode label="1">
+                <ModalContent
+                  title="Building Permit (March 1920)"
+                />
+              </TreeNode>
+            }
+            third={<TreeNode label="1">
+              <ModalContent
+                title="Building Permit (March 1920)"
+              />
+            </TreeNode>
+            } />
+          <DiagonalRow first={
+            <TreeNode label="1">
+              <ModalContent
+                title="Building Permit (March 1920)"
+              />
+            </TreeNode>
+          }
+            second={
+              <TreeNode label="1">
+                <ModalContent
+                  title="Building Permit (March 1920)"
+                />
+              </TreeNode>
+            }
+            third={<TreeNode label="1">
+              <ModalContent
+                title="Building Permit (March 1920)"
+              />
+            </TreeNode>
+            } />
+          <DiagonalRow first={
+            <TreeNode label="4">
+              <ModalContent
+                title="Don't Miss Your Opportunity! (March 8th, 1920)"
+                descriptions={
+                  [
+                    "As part of the Westminster Apartments' promotional campaign, the public was encouraged not only to live in the building but to invest in it as well. The promise of modern amenities—such as elevators, dumbwaiters, and fireproof construction—was marketed as more than just convenience; it was an opportunity for financial gain.",
+                    "Shares were offered at $100 each, which, adjusted for inflation, amounts to approximately $1,500 in 2025. This dual appeal of luxury living and potential return on investment made the Westminster a standout venture in Halifax's real estate scene, attracting both future tenants and local investors during a time of urban growth and change."
+                  ]}
+                figures={[<Figure key="trunk-fig-4" src="img/trunk/fig-4.jpg" alt="Figure 4" caption="(The Evening Mail, March 8, 1920, p. 9)" />]}
+              />
+            </TreeNode>
+          }
+            second={
+              <TreeNode label="5">
+                <ModalContent
+                  title="April 15th, 1920 - Foundation Work Beginning"
+                  figures={[<Figure key="trunk-fig-5" src="img/trunk/fig-5.jpg" alt="Figure 5" caption="The Evening Mail (Halifax, NS), April 15, 1920, 11." />]}
+                />
+              </TreeNode>
+            }
+            third={<TreeNode label="6">
+              <ModalContent
+                title="May 6th, 1920 - Work Underway "
+                figures={[<Figure key="trunk-fig-6" src="img/trunk/fig-5.jpg" alt="Figure 6" caption="The Evening Mail (Halifax, NS), May 6, 1920, 13." />]}
+              />
+            </TreeNode>
+            } />
+          <DiagonalRow first={
             <TreeNode label="1">
               <ModalContent
                 title="Building Permit (March 1920)"
@@ -36,24 +104,27 @@ function App() {
                 figures={[<Figure key="trunk-fig-1" src="img/trunk/fig-1.jpg" alt="Figure 1" caption="(Nova Scotia Archives, Building Permit for Westminster Apartments, March 1920)" />]}
               />
             </TreeNode>
-            <TreeNode label="2">
-              <ModalContent
-                title="The Blueprints (c. 1920)"
-                descriptions={
-                  ["The architecture firm responsible for designing the Westminster Apartments was Dolphin and Doswell, a short-lived partnership based in Montreal and Toronto. Formed in 1920—the same year construction began on the Westminster—this was likely one of their first commissions. The partnership dissolved only five years later, in 1925.",
-                    "Following this, Harry Royden Doswell moved to New York City, where he joined Shreve, Lamb & Harmon in 1927, the firm famously credited with designing the Empire State Building in 1929. While it is unclear whether Doswell directly contributed to that project, the connection is interesting (The Biographical Dictionary of Architects in Canada 1800–1950, entry on Harry Royden Doswell, accessed April 2025)."
-                  ]}
-                figures={
-                  [
-                    <Figure key="trunk-fig-1" src="img/trunk/fig-2-1.jpg" alt="Figure 2.1" caption="Blueprint of ground floor level" />,
-                    <Figure key="trunk-fig-2" src="img/trunk/fig-2-2.jpg" alt="Figure 2.2" caption="Blueprint of floors 2-5 (they are uniform)" />,
-                    <Figure key="trunk-fig-3" src="img/trunk/fig-2-3.jpg" alt="Figure 2.3" caption="Blueprint of roof level, including dumbwaiter and multiple clotheslines." />,
-                    <Figure key="trunk-fig-4" src="img/trunk/fig-2-4.jpg" alt="Figure 2.4" caption="Blueprint of Morris Street exterior of the building" />,
-                    <Figure key="trunk-fig-5" src="img/trunk/fig-2-5.jpg" alt="Figure 2.5" caption="Blueprint of back of the building, notably with a chimney and the standing clotheslines as well as a fire escape in each unit." />,
-                  ]}
-              />
-            </TreeNode>
-            <TreeNode label="3">
+          }
+            second={
+              <TreeNode label="2">
+                <ModalContent
+                  title="The Blueprints (c. 1920)"
+                  descriptions={
+                    ["The architecture firm responsible for designing the Westminster Apartments was Dolphin and Doswell, a short-lived partnership based in Montreal and Toronto. Formed in 1920—the same year construction began on the Westminster—this was likely one of their first commissions. The partnership dissolved only five years later, in 1925.",
+                      "Following this, Harry Royden Doswell moved to New York City, where he joined Shreve, Lamb & Harmon in 1927, the firm famously credited with designing the Empire State Building in 1929. While it is unclear whether Doswell directly contributed to that project, the connection is interesting (The Biographical Dictionary of Architects in Canada 1800–1950, entry on Harry Royden Doswell, accessed April 2025)."
+                    ]}
+                  figures={
+                    [
+                      <Figure key="trunk-fig-1" src="img/trunk/fig-2-1.jpg" alt="Figure 2.1" caption="Blueprint of ground floor level" />,
+                      <Figure key="trunk-fig-2" src="img/trunk/fig-2-2.jpg" alt="Figure 2.2" caption="Blueprint of floors 2-5 (they are uniform)" />,
+                      <Figure key="trunk-fig-3" src="img/trunk/fig-2-3.jpg" alt="Figure 2.3" caption="Blueprint of roof level, including dumbwaiter and multiple clotheslines." />,
+                      <Figure key="trunk-fig-4" src="img/trunk/fig-2-4.jpg" alt="Figure 2.4" caption="Blueprint of Morris Street exterior of the building" />,
+                      <Figure key="trunk-fig-5" src="img/trunk/fig-2-5.jpg" alt="Figure 2.5" caption="Blueprint of back of the building, notably with a chimney and the standing clotheslines as well as a fire escape in each unit." />,
+                    ]}
+                />
+              </TreeNode>
+            }
+            third={<TreeNode label="3">
               <ModalContent
                 title="The Best in the East (1920-21)"
                 descriptions={
@@ -64,34 +135,7 @@ function App() {
                 figures={[<Figure key="trunk-fig-3" src="img/trunk/fig-3.jpg" alt="Figure 3" caption="(The Evening Mail, March 8, 1920, p. 9)" />]}
               />
             </TreeNode>
-            <TreeNode label="4">
-              <ModalContent
-                title="Don't Miss Your Opportunity! (March 8th, 1920)"
-                descriptions={
-                  [
-                    "As part of the Westminster Apartments' promotional campaign, the public was encouraged not only to live in the building but to invest in it as well. The promise of modern amenities—such as elevators, dumbwaiters, and fireproof construction—was marketed as more than just convenience; it was an opportunity for financial gain.",
-                    "Shares were offered at $100 each, which, adjusted for inflation, amounts to approximately $1,500 in 2025. This dual appeal of luxury living and potential return on investment made the Westminster a standout venture in Halifax's real estate scene, attracting both future tenants and local investors during a time of urban growth and change."
-                  ]}
-              />
-              figures={[<Figure key="trunk-fig-4" src="img/trunk/fig-4.jpg" alt="Figure 4" caption="(The Evening Mail, March 8, 1920, p. 9)" />]}
-            </TreeNode>
-            <TreeNode label="5">
-              <ModalContent
-                title="April 15th, 1920 - Foundation Work Beginning"
-                figures={[<Figure key="trunk-fig-5" src="img/trunk/fig-5.jpg" alt="Figure 5" caption="The Evening Mail (Halifax, NS), April 15, 1920, 11." />]}
-              />
-            </TreeNode>
-            <TreeNode label="6">
-              <ModalContent
-                title="May 6th, 1920 - Work Underway "
-                figures={[<Figure key="trunk-fig-6" src="img/trunk/fig-5.jpg" alt="Figure 6" caption="The Evening Mail (Halifax, NS), May 6, 1920, 13." />]}
-              />
-            </TreeNode>
-          </div>
-          {/* trunk column 2 */}
-          <div className="flex flex-col justify-between h-full">
-
-          </div>
+            } />
         </div>
       </div>
       {/* roots */}
@@ -222,7 +266,7 @@ function App() {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 
