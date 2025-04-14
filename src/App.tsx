@@ -33,6 +33,7 @@ function App() {
                     "This is the first mention of the Canadian Construction Company in The Halifax Herald on March 26, 1894. The Canadian Construction Co. was formed in 1849 and operated under the direction of the Eastern Trust Company. While Canadian Construction Co. served as the contractor responsible for physically building and staffing the Westminster Apartments, Eastern Trust provided the financial backing and project oversight (The Halifax Herald, March 26, 1894, p. 1).",
                     "Not long after the completion of the Westminster Apartments, Eastern Trust filed for bankruptcy in 1922 (Library and Archives Canada, RG13-A-2, Volume 272, File 1922-1923). However, they continued to own and build multiple apartment houses. After this, they were embroiled in a legal dispute in 1928. Busch v. The Eastern Trust Co. et al. involved a legal dispute over the interpretation of a will and the distribution of the deceased’s estate (Busch v. The Eastern Trust Co. et al., 1928). Despite these challenges, they continued to own and operate the Westminster Apartments until its sale in the 1940s (Cobden, Simon Spatz: From Holocaust to Halifax, 421)."
                   ]}
+                figures={[<Figure key="trunk-fig-1" src="img/trunk/fig-1.jpg" alt="Figure 1" caption="(Nova Scotia Archives, Building Permit for Westminster Apartments, March 1920)" />]}
               />
             </TreeNode>
             <TreeNode label="2">
@@ -41,6 +42,14 @@ function App() {
                 descriptions={
                   ["The architecture firm responsible for designing the Westminster Apartments was Dolphin and Doswell, a short-lived partnership based in Montreal and Toronto. Formed in 1920—the same year construction began on the Westminster—this was likely one of their first commissions. The partnership dissolved only five years later, in 1925.",
                     "Following this, Harry Royden Doswell moved to New York City, where he joined Shreve, Lamb & Harmon in 1927, the firm famously credited with designing the Empire State Building in 1929. While it is unclear whether Doswell directly contributed to that project, the connection is interesting (The Biographical Dictionary of Architects in Canada 1800–1950, entry on Harry Royden Doswell, accessed April 2025)."
+                  ]}
+                figures={
+                  [
+                    <Figure key="trunk-fig-1" src="img/trunk/fig-2-1.jpg" alt="Figure 2.1" caption="Blueprint of ground floor level" />,
+                    <Figure key="trunk-fig-2" src="img/trunk/fig-2-2.jpg" alt="Figure 2.2" caption="Blueprint of floors 2-5 (they are uniform)" />,
+                    <Figure key="trunk-fig-3" src="img/trunk/fig-2-3.jpg" alt="Figure 2.3" caption="Blueprint of roof level, including dumbwaiter and multiple clotheslines." />,
+                    <Figure key="trunk-fig-4" src="img/trunk/fig-2-4.jpg" alt="Figure 2.4" caption="Blueprint of Morris Street exterior of the building" />,
+                    <Figure key="trunk-fig-5" src="img/trunk/fig-2-5.jpg" alt="Figure 2.5" caption="Blueprint of back of the building, notably with a chimney and the standing clotheslines as well as a fire escape in each unit." />,
                   ]}
               />
             </TreeNode>
@@ -52,6 +61,7 @@ function App() {
                     "The Westminster Apartments were prominently featured in local newspapers throughout the construction process, with this image marking the first public reveal. Published as part of a full-page spread in the Evening Mail on March 8th, 1920, this launched the building’s advertising campaign. The Westminster was promoted as “the most modern and grand apartment house east of Montreal”—a tagline that has remained part of its legacy over a century later. This slogan was likely coined as it was to be the largest apartment building in Halifax. The Eastern Trust Co. also promised modernity akin to Montreal.",
                     "The development promised an impressive array of modern amenities for the time, including dumbwaiters, an elevator, on-site janitorial services, streamlined heating, and a fully fireproof structure—features that positioned it as a cutting-edge residence in early 20th-century Halifax."
                   ]}
+                figures={[<Figure key="trunk-fig-3" src="img/trunk/fig-3.jpg" alt="Figure 3" caption="(The Evening Mail, March 8, 1920, p. 9)" />]}
               />
             </TreeNode>
             <TreeNode label="4">
@@ -63,14 +73,18 @@ function App() {
                     "Shares were offered at $100 each, which, adjusted for inflation, amounts to approximately $1,500 in 2025. This dual appeal of luxury living and potential return on investment made the Westminster a standout venture in Halifax's real estate scene, attracting both future tenants and local investors during a time of urban growth and change."
                   ]}
               />
+              figures={[<Figure key="trunk-fig-4" src="img/trunk/fig-4.jpg" alt="Figure 4" caption="(The Evening Mail, March 8, 1920, p. 9)" />]}
             </TreeNode>
             <TreeNode label="5">
               <ModalContent
                 title="April 15th, 1920 - Foundation Work Beginning"
-                descriptions={
-                  [
-                    ""
-                  ]}
+                figures={[<Figure key="trunk-fig-5" src="img/trunk/fig-5.jpg" alt="Figure 5" caption="The Evening Mail (Halifax, NS), April 15, 1920, 11." />]}
+              />
+            </TreeNode>
+            <TreeNode label="6">
+              <ModalContent
+                title="May 6th, 1920 - Work Underway "
+                figures={[<Figure key="trunk-fig-6" src="img/trunk/fig-5.jpg" alt="Figure 6" caption="The Evening Mail (Halifax, NS), May 6, 1920, 13." />]}
               />
             </TreeNode>
           </div>
