@@ -25,42 +25,148 @@ function App() {
       <div className="w-full h-[35%] py-4 flex justify-center">
         <div className="w-[20%] flex flex-col justify-center max-h-full">
           <DiagonalRow first={
-            <TreeNode label="1">
+            <TreeNode label="16">
               <ModalContent
-                title="Building Permit (March 1920)"
+                title="70s - In the Background"
+                figures={
+                  [
+                    <Figure key="trunk-fig-16-1" src="img/trunk/fig-16-1.jpg" alt="Figure 16.1" caption="A photo from 1976 with the Westminster Apartments featured in the background to the right. (Halifax Municipal Archives, Harrington House, 1976)" />,
+                    <Figure key="trunk-fig-16-2" src="img/trunk/fig-16-2.jpg" alt="Figure 16.2" caption="A photo of the Infirmary from the 1970s with the Westminster Apartments to the left. (Halifax Municipal Archives, Halifax Infirmary Complex, c. 1970) " />
+                  ]}
               />
             </TreeNode>
           }
             second={
-              <TreeNode label="1">
+              <TreeNode label="17">
                 <ModalContent
-                  title="Building Permit (March 1920)"
+                  title="2021 - Award Winning Renovations"
+                  descriptions={[
+                    "In 2021, The Westminster Apartments underwent a major renovation to celebrate its 100th anniversary, which aimed to restore its vintage character, while refurbishing the lobby. The project focused on historical and sleek design, including new tile, carpets, lighting, and refurbished brass railings salvaged from Halifax's former CBC Radio building. The original gated Turnbull elevator, dating back to the early 1900s, was also restored and remains operational. The project was delayed due to COVID-19, however, it was nominated for the CFAA's “Renovation of the Year,” and won (Southwest Properties, 2021).",
+                    "Notably, the submission refers to the earlier slogan of the Westminster being the “biggest apartment East of Montreal.”"
+                  ]}
+                  figures={
+                    [
+                      <Figure key="trunk-fig-17-1" src="img/trunk/fig-17-1.jpg" alt="Figure 17.1" caption="Amber Clifford, Photo of Westminster Apartments' 2021 Lobby Renovations, April 2025, Halifax, Nova Scotia." />,
+                      <Figure key="trunk-fig-17-2" src="img/trunk/fig-17-2.jpg" alt="Figure 17.2" caption="Amber Clifford, Photo of Westminster Apartments' 2021 Lobby Renovations, April 2025, Halifax, Nova Scotia." />,
+                      <Figure key="trunk-fig-17-3" src="img/trunk/fig-17-3.jpg" alt="Figure 17.3" caption="Amber Clifford, Photo of Westminster Apartments' 2021 Lobby Renovations, April 2025, Halifax, Nova Scotia." />
+                    ]
+                  }
                 />
               </TreeNode>
             }
-            third={<TreeNode label="1">
+          />
+          <DiagonalRow first={
+            <TreeNode label="13">
               <ModalContent
-                title="Building Permit (March 1920)"
+                title="1965 - Under New Ownership"
+                descriptions={[
+                  "In 1965, Simon Spatz—a Holocaust survivor and prominent Halifax businessman—purchased the Westminster Apartments for $300,000, which would be approximately $2.9 million today, adjusted for inflation. Spatz had spent the previous decade acquiring smaller properties throughout Halifax, but the Westminster marked his largest and most ambitious purchase (Cobden 2016, 419).",
+                  "Initially, Spatz was unimpressed with the building. According to his biography, he felt it was outdated and discovered that the water main wasn't even functioning at the time of purchase. Despite these challenges, the acquisition would become a key moment in what later became Southwest Properties, one of Halifax's most influential real estate companies, who continues to be owned and operated by his son Jim Spatz."
+                ]}
+                figures={
+                  [
+                    <Figure key="trunk-fig-13" src="img/trunk/fig-13.jpeg" alt="Figure 13" caption="Photograph of Simon Spatz on the steps of the Westminster Apartments, ca. 1966, photographer unknown, courtesy of Southwest Properties, Halifax, Nova Scotia." />,
+                  ]}
+              />
+            </TreeNode>
+          }
+            second={
+              <TreeNode label="14">
+                <ModalContent
+                  title="Late 60s - Renovation and Refurbishment"
+                  descriptions={[
+                    "Despite its initial issues, the Westminster Apartments went on to become one of Simon Spatz's most favourite properties. He admired its solid construction and considered the acquisition a turning point in his career, establishing him as a serious figure in Halifax's real estate landscape (Cobden 2016, 420).",
+                    "Spatz invested both time and capital into revitalizing the building. He sealed the dumbwaiters, due to fire safety concerns, and upgraded the infrastructure by installing high-grade piping and modern kitchens. At the time of purchase, the apartments were equipped only with basic kitchenettes, which he replaced to meet a higher standard of living. Roof top access was also removed for safety concerns, with the laundry room being updated (Cobden 2006, 426)."
+                  ]}
+                  figures={
+                    [
+                      <Figure key="trunk-fig-14" src="img/trunk/fig-14.jpg" alt="Figure 14" caption="Jim Spatz, note to the author, March 7, 2025." />,
+                    ]}
+                />
+              </TreeNode>
+            }
+            third={<TreeNode label="15">
+              <ModalContent
+                title="Bye-Bye Dumbwaiters"
+                figures={
+                  [
+                    <Figure key="trunk-fig-15" src="img/trunk/fig-15.jpg" alt="Figure 15" caption="Amber Clifford, Photograph of sealed laundry dumbwaiter at the Westminster Apartments, March 10, 2025, Halifax, Nova Scotia." />
+                  ]}
               />
             </TreeNode>
             } />
           <DiagonalRow first={
-            <TreeNode label="1">
+            <TreeNode label="10">
               <ModalContent
-                title="Building Permit (March 1920)"
+                title="More Delays"
+                descriptions={[
+                  "The building continued to face delays, which is not uncommon for large-scale construction projects. However, due to the public interest and ongoing media attention surrounding the Westminster, its progress was under close watch. The community was eager for its completion, and initial expectations for a January opening were eventually pushed back to March 1st, and again until June 1st, 1921, wherein tenants were finally able to move in. The delay was approximately 6 months.",
+                  "The construction of the Westminster Apartments, beginning in 1920, is commemorated by a cornerstone installed above the main entrance, situated at the intersection of Church and Morris Streets."
+                ]}
+                figures={
+                  [
+                    <Figure key="trunk-fig-10-1" src="img/trunk/fig-10-1.jpg" alt="Figure 10.1" caption="The Evening Mail, (Halifax, NS,) January 6, 1921, 12." />,
+                    <Figure key="trunk-fig-10-2" src="img/trunk/fig-10-2.jpg" alt="Figure 10.2" caption="Amber Clifford, Photo of Westminster Apartments' 1920 Corner Stone, April 2025, Halifax, Nova Scotia." />
+                  ]}
               />
             </TreeNode>
           }
             second={
-              <TreeNode label="1">
+              <TreeNode label="11">
                 <ModalContent
-                  title="Building Permit (March 1920)"
+                  title="1920s - Apartments for Rent"
+                  descriptions={[
+                    "After the completion of the apartments in 1921, they received little mention in local newspapers outside of tenant-related updates and rental ads. There were no major fires or incidents—at least during the 1920s—linked to the building's infrastructure. The building became a Halifax staple as the community surrounding it continued to grow."
+                  ]}
+                  figures={
+                    [
+                      <Figure key="trunk-fig-11" src="img/trunk/fig-11.jpg" alt="Figure 11" caption="The Evening Mail, (Halifax, NS), June 9, 1922, 16" />,
+                    ]}
                 />
               </TreeNode>
             }
-            third={<TreeNode label="1">
+            third={<TreeNode label="12">
+              <ModalContent
+                title="From the 30s to the 40s"
+                descriptions={[
+                  "In January 1949, the Eastern Trust Company sold the Westminster Apartments to the Cleveland Realty Corporation."
+                ]}
+                figures={
+                  [
+                    <Figure key="trunk-fig-12" src="img/trunk/fig-12.jpg" alt="Figure 12" caption="The Evening Mail, (Halifax, NS), Aug. 2, 1929, 12." />,
+                  ]}
+              />
+            </TreeNode>
+            } />
+          <DiagonalRow first={
+            <TreeNode label="7">
+              <ModalContent
+                title="June 26th, 1920 - Credit to the City"
+                figures={[<Figure key="trunk-fig-7" src="img/trunk/fig-7.jpg" alt="Figure 7" caption="The Evening Mail, (Halifax, NS), June 26, 1920, 12" />]}
+              />
+            </TreeNode>
+          }
+            second={
+              <TreeNode label="8">
+                <ModalContent
+                  title="Fall, 1920s - Delays and Anxieties"
+                  descriptions={[
+                    "These three newspaper clippings offer a glimpse into the challenges  the Eastern Trust Co. was experiencing during the construction of the building. Originally slated for completion before the New Year of 1920, the project experienced notable delays. During this time, the Eastern Trust Company had publicly promised affordable rent for modern apartments, but mounting construction costs led to speculation that rents might need to be increased.",
+                    "This speculation was quickly quashed when Eastern Trust issued a follow-up just two days later, reassuring shareholders and future tenants that rents would not be raised. The advertisement also reaffirmed that the Westminster would be the finest apartment building in Halifax, and because no other like it had been built, the construction process was different."
+                  ]}
+                  figures={
+                    [<Figure key="trunk-fig-8-1" src="img/trunk/fig-8-1.jpg" alt="Figure 8.1" caption="Notice of delay. The Evening Mail, (Halifax, NS), Sept. 16, 1920, 10." />,
+                    <Figure key="trunk-fig-8-2" src="img/trunk/fig-8-2.jpg" alt="Figure 8.2" caption="Rental Increase Due to Construction Costs. The Evening Mail, (Halifax, NS), Sept. 16, 1920, 10. " />,
+                    <Figure key="trunk-fig-8-3" src="img/trunk/fig-8-3.jpg" alt="Figure 8.3" caption="Rent Will Not Increase. The Evening Mail, (Halifax, NS), Sept. 16, 1920, 10." />
+                    ]}
+                />
+              </TreeNode>
+            }
+            third={<TreeNode label="9">
               <ModalContent
                 title="Building Permit (March 1920)"
+                descriptions={["The Evening Mail continued to publish updates—such as the installation of the boiler and other construction milestones—likely to keep the public informed about the building's progress and when it could be expected to be ready for tenancy."]}
+                figures={[<Figure key="trunk-fig-9" src="img/trunk/fig-9.jpg" alt="Figure 9" caption="The Evening Mail, (Halifax, NS), Sept. 16, 1920, 10." />]}
               />
             </TreeNode>
             } />
@@ -99,7 +205,7 @@ function App() {
                 descriptions={
                   [
                     "This is the first mention of the Canadian Construction Company in The Halifax Herald on March 26, 1894. The Canadian Construction Co. was formed in 1849 and operated under the direction of the Eastern Trust Company. While Canadian Construction Co. served as the contractor responsible for physically building and staffing the Westminster Apartments, Eastern Trust provided the financial backing and project oversight (The Halifax Herald, March 26, 1894, p. 1).",
-                    "Not long after the completion of the Westminster Apartments, Eastern Trust filed for bankruptcy in 1922 (Library and Archives Canada, RG13-A-2, Volume 272, File 1922-1923). However, they continued to own and build multiple apartment houses. After this, they were embroiled in a legal dispute in 1928. Busch v. The Eastern Trust Co. et al. involved a legal dispute over the interpretation of a will and the distribution of the deceased’s estate (Busch v. The Eastern Trust Co. et al., 1928). Despite these challenges, they continued to own and operate the Westminster Apartments until its sale in the 1940s (Cobden, Simon Spatz: From Holocaust to Halifax, 421)."
+                    "Not long after the completion of the Westminster Apartments, Eastern Trust filed for bankruptcy in 1922 (Library and Archives Canada, RG13-A-2, Volume 272, File 1922-1923). However, they continued to own and build multiple apartment houses. After this, they were embroiled in a legal dispute in 1928. Busch v. The Eastern Trust Co. et al. involved a legal dispute over the interpretation of a will and the distribution of the deceased's estate (Busch v. The Eastern Trust Co. et al., 1928). Despite these challenges, they continued to own and operate the Westminster Apartments until its sale in the 1940s (Cobden, Simon Spatz: From Holocaust to Halifax, 421)."
                   ]}
                 figures={[<Figure key="trunk-fig-1" src="img/trunk/fig-1.jpg" alt="Figure 1" caption="(Nova Scotia Archives, Building Permit for Westminster Apartments, March 1920)" />]}
               />
@@ -111,7 +217,7 @@ function App() {
                   title="The Blueprints (c. 1920)"
                   descriptions={
                     ["The architecture firm responsible for designing the Westminster Apartments was Dolphin and Doswell, a short-lived partnership based in Montreal and Toronto. Formed in 1920—the same year construction began on the Westminster—this was likely one of their first commissions. The partnership dissolved only five years later, in 1925.",
-                      "Following this, Harry Royden Doswell moved to New York City, where he joined Shreve, Lamb & Harmon in 1927, the firm famously credited with designing the Empire State Building in 1929. While it is unclear whether Doswell directly contributed to that project, the connection is interesting (The Biographical Dictionary of Architects in Canada 1800–1950, entry on Harry Royden Doswell, accessed April 2025)."
+                      "Following this, Harry Royden Doswell moved to New York City, where he joined Shreve, Lamb & Harmon in 1927, the firm famously credited with designing the Empire State Building in 1929. While it is unclear whether Doswell directly contributed to that project, the connection is interesting (The Biographical Dictionary of Architects in Canada 1800-1950, entry on Harry Royden Doswell, accessed April 2025)."
                     ]}
                   figures={
                     [
@@ -129,7 +235,7 @@ function App() {
                 title="The Best in the East (1920-21)"
                 descriptions={
                   [
-                    "The Westminster Apartments were prominently featured in local newspapers throughout the construction process, with this image marking the first public reveal. Published as part of a full-page spread in the Evening Mail on March 8th, 1920, this launched the building’s advertising campaign. The Westminster was promoted as “the most modern and grand apartment house east of Montreal”—a tagline that has remained part of its legacy over a century later. This slogan was likely coined as it was to be the largest apartment building in Halifax. The Eastern Trust Co. also promised modernity akin to Montreal.",
+                    "The Westminster Apartments were prominently featured in local newspapers throughout the construction process, with this image marking the first public reveal. Published as part of a full-page spread in the Evening Mail on March 8th, 1920, this launched the building's advertising campaign. The Westminster was promoted as “the most modern and grand apartment house east of Montreal”—a tagline that has remained part of its legacy over a century later. This slogan was likely coined as it was to be the largest apartment building in Halifax. The Eastern Trust Co. also promised modernity akin to Montreal.",
                     "The development promised an impressive array of modern amenities for the time, including dumbwaiters, an elevator, on-site janitorial services, streamlined heating, and a fully fireproof structure—features that positioned it as a cutting-edge residence in early 20th-century Halifax."
                   ]}
                 figures={[<Figure key="trunk-fig-3" src="img/trunk/fig-3.jpg" alt="Figure 3" caption="(The Evening Mail, March 8, 1920, p. 9)" />]}

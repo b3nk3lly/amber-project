@@ -11,10 +11,10 @@ export default function TreeNode({ children, icon, label }: Readonly<TreeNodePro
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     return <>
-        <div className="bg-gray-200 hover:bg-white shadow-md rounded-full w-10 h-10 p-2 outline-2 hover:cursor-pointer flex justify-center items-center" onClick={() => setIsModalOpen(true)}>
+        <button className="bg-gray-200 hover:bg-white shadow-md rounded-full w-10 h-10 p-2 outline-2 hover:cursor-pointer flex justify-center items-center" onClick={() => setIsModalOpen(true)}>
             {icon && <img src={icon} />}
             {label}
-        </div>
+        </button>
         <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
             {children}
         </Modal>
