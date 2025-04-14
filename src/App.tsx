@@ -101,7 +101,7 @@ function App() {
           <div className="flex flex-row justify-between w-full">
             <TreeNode label="1">
               <ModalContent
-                title="First Records (going earliest to the beginning of construction)"
+                title="Land Acknowledgement"
                 descriptions={["The Mi'kmaq have been in Nova Scotia since time immemorial. Halifax was originally referred to as Kjipuktuk by the Mi'kmaq people."]}
               />
             </TreeNode>
