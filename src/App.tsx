@@ -142,7 +142,7 @@ function App() {
           a Brief Land, Building, and Community History Timeline
         </h2>
         <h3 className="text-md font-semibold px-4 py-2 w-full text-white text-center">
-          This is a heritage tree! The roots contain information about the property and the land where the Westminster Apartments stand. The trunk showcases details and photos of the building itself. Finally, the leaves hold cherished memories and accounts from past residents, along with some fascinating vital statistics and newspaper clippings!
+          This is a heritage tree! The roots contain information about the property and the land where the Westminster Apartments stand. The trunk showcases details and photos of the building itself. Finally, the leaves hold memories and accounts from past residents, along with some fascinating vital statistics and newspaper clippings!
         </h3>
       </div>
 
