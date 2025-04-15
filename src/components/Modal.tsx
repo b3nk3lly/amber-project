@@ -31,7 +31,7 @@ export default function Modal({ isOpen, onClose, children }: Readonly<ModalProps
         <>
             {isOpen && (
                 <div className="fixed inset-0 bg-black/25 bg-opacity-50 flex items-center justify-center z-50" onClick={onClose}>
-                    <div className="fixed bg-white rounded-2xl shadow-xl p-6 max-w-200 max-h-128 overflow-y-auto" onClick={(e) => e.stopPropagation()}>
+                    <div className="fixed bg-white rounded-2xl shadow-xl p-6 m-1 max-h-screen max-w-screen md:max-w-200 md:max-h-128 overflow-y-auto" onClick={(e) => e.stopPropagation()}>
                         <div className="flex flex-col items-center space-y-6">
                             {children}
                             <div className="flex justify-center">

@@ -7,17 +7,132 @@ import TreeNode from './components/TreeNode';
 function App() {
 
   return (
-    <div className="bg-[url(/big-tree.png)] w-[1024px] h-[1536px] bg-center bg-no-repeat" style={{ backgroundSize: "100% 100%" }}>
+    <div className="bg-[url(/big-tree.png)] w-[1024px] h-[1536px] bg-center bg-no-repeat flex flex-col items-center" >
       {/* leaves */}
-      <div id="leaves" className="w-full h-[20%] px-16 pt-24">
-        <div className="flex flex-col items-center space-y-4">
+      <div id="leaves" className="w-full h-[15%] px-16 pt-24">
+        <div className="flex flex-col items-center space-y-8">
           {/* leaves row 1 */}
           <div className="flex flex-row justify-evenly w-3/5">
 
+            <TreeNode label="2">
+              <ModalContent
+                title="1925 – Music Lessons"
+                figures={
+                  [
+                    <Figure key="leaves-fig-2" src="img/leaves/fig-2.jpg" alt="Figure 2" caption="The Evening Mail, (Halifax, NS), January 22, 1925, 13." />
+                  ]}
+              />
+            </TreeNode>
+
+            <TreeNode label="4">
+              <ModalContent
+                title="1927 - Alcohol Fire"
+                figures={
+                  [
+                    <Figure key="leaves-fig-3" src="img/leaves/fig-4-1.jpg" alt="Figure 4.1" caption="The Evening Mail, (Halifax, NS), June 15, 1927, 10." />,
+                    <Figure key="leaves-fig-3" src="img/leaves/fig-4-2.jpg" alt="Figure 4.2" caption="The Evening Mail, (Halifax, NS), June 14, 1927, 11." />
+                  ]}
+              />
+            </TreeNode>
+            <TreeNode label="6">
+              <ModalContent
+                title="Late 1970s - Memories of a Grandparents Apartment"
+                descriptions={["Tim Chilsom recalled his grandfather's apartment when visiting him in the late 70s “I was not actually a resident at 5300 Morris, although my Grandfather had an apartment there, which he referred to as ‘Pad 40’ - on the 4th floor as I recall, in the late 70s.” he wrote in an email, “I can recall things about the lobby and particularly about the elevator, which had a very interesting collapsing safety screen.” (Chisholm, personal communication, March 20th, 2025)"]}
+                figures={
+                  [
+                    <Figure key="leaves-fig-6-1" src="img/leaves/fig-6-1.jpg" alt="Figure 6.1" caption="The Evening Mail, (Halifax, NS ), February 19, 1921." />,
+                    <Figure key="leaves-fig-6-2" src="img/leaves/fig-6-2.jpg" alt="Figure 6.2" caption="Clifford, Amber. Photograph of the Turnbull Elevator, March 10, 2025." />
+                  ]}
+              />
+            </TreeNode>
+            <TreeNode label="8">
+              < ModalContent
+                title="Unit #15 – Throughout time"
+                descriptions={
+                  [
+                    "2023-25 Author's Experience",
+                    "During my two years living in the Westminster Apartments, I have greatly enjoyed my time here. It’s a beautiful and charming building. I, like many others, really like the old-school elevator—except when someone leaves the gate open, and I have to use the stairs (it only operates with the gate closed, and yes, I’ve opened it mid-ride, causing it to stop abruptly). My unit is #15, a ‘dinky little apartment,’ as it was first advertised in the 1920s. It’s a sunny bachelor with tall ceilings and a huge closet. Over 100 years later, I can confidently say that it’s fire-proof, but most certainly not soundproof. The other tenants in my unit are Angel and Baby, who give five stars for the quality of birds to watch. Overall, I love this building, I’ve enjoyed living here, and I look forward to continuing my research into its history.",
+                    "Other Tenants of #15",
+                    "I’ve only been able to get snapshots of previous tenants. I know that the girl who lived in the unit before me is now in a two-bedroom apartment on the fifth floor. Aside from this, the first recorded tenant in McAlpine’s 1921 edition was a woman named Mrs. Annie Steely, who worked as a stenographer and only lived here for one year. I focused on a few decades for reference: From 1943 to 1947 (approximate), a widow named Ellen T. Cullen lived here. In 1954, a woman named Elise Anthony lived here; she likely attended or worked at the University of King’s College. Ruth Gilis lived here in 1961 and worked as a helper at the HMC Dockyard. These are just a few examples, but they paint a picture of the people who have lived in the same space as me."
+                  ]}
+                figures={
+                  [
+                    <Figure key="leaves-fig-8-2" src="img/leaves/fig-8-2.jpg" alt="Figure 8.2" caption="Clifford, Amber. Photograph of Angel and Baby, 2025." />
+                  ]}
+              />
+            </TreeNode>
+            <TreeNode label="10">
+              <ModalContent
+                title="2015-16 – Personal Experience"
+                descriptions={[
+                  "Ben Wedge, a former resident of the Westminster Apartments in 2015/16, shared his experience via email: \"I lived there for about a year in 2015/16. My best friend lived down the hall. Great building. The supers were a lovely semi-retired couple from New Brunswick. Nancy Caldwell, I think was her name, the husband’s name escapes me.\" He also recalled his investigation into the elevator, noting, \"To the best of my knowledge, the elevator is the oldest passenger elevator still operating in NS. I did some digging through the permit system around that time but couldn’t reach a conclusive answer. Certainly, it’s a ship of Theseus now.\" Wedge expressed his fondness for the elevator, adding, \"It was always fun showing it to people and teasing them about whether it could complete the journey.\" (Wedge, personal communication, April 14, 2025)"]
+                }
+                figures={
+                  [
+                    <Figure key="leaves-fig-10-1" src="img/leaves/fig-10-1.jpg" alt="Figure 10.1" caption="Clifford, Amber. Photograph front door, unit 15, 2025." />,
+                    <Figure key="leaves-fig-10-2" src="img/leaves/fig-10-2.jpg" alt="Figure 10.2" caption="Clifford, Amber. Photograph front door, unit 15, 2025." />,
+                    <Figure key="leaves-fig-10-3" src="img/leaves/fig-10-3.jpg" alt="Figure 10.3" caption="Clifford, Amber. Photograph front door, unit 15, 2025." />
+                  ]}
+              />
+            </TreeNode>
           </div>
           {/* leaves row 2 */}
           <div className="flex flex-row justify-between w-3/5">
+            <TreeNode label="1">
+              <ModalContent
+                title="1921 - First Death"
+                figures={
+                  [
+                    <Figure key="leaves-fig-1" src="img/leaves/fig-1.jpg" alt="Figure 1" caption="The Evening Mail, (Halifax, NS), July 25, 1921, 3." />
+                  ]}
+              />
+            </TreeNode>
+            <TreeNode label="3">
+              <ModalContent
+                title="1927 – Furniture Sale"
+                figures={
+                  [
+                    <Figure key="leaves-fig-3" src="img/leaves/fig-3.jpg" alt="Figure 3" caption="The Evening Mail, (Halifax, NS), January 13, 1927, 20." />
+                  ]}
+              />
+            </TreeNode>
+            <TreeNode label="5">
+              <ModalContent
+                title="1944-47 – Chapel of Apartment 39"
+                descriptions={["From 1944 until 1947, Reverend L. R. Donaldson officiated at least 29 marriages at his apartment in the Westminster Apartments. He lived in unit 39 for around four years, according to McAlpine’s City Directories. In the marriage certificate featured here, the groom was from Scotland, and his listed address was the HMCS Sault Ste. Marie, a boat that was anchored in the Halifax harbor at the time. Notably, these marriages took place around the end of World War II, so there may be a connection there (Nova Scotia Births, Marriages, and Deaths, 1945)."]}
+                figures={
+                  [
+                    <Figure key="leaves-fig-5" src="img/leaves/fig-5.jpg" alt="Figure 5" caption="(Nova Scotia Births, Marriages, and Deaths, 1945)" />
+                  ]}
+              />
+            </TreeNode>
 
+            <TreeNode label="7">
+              <ModalContent
+                title="Westminster in the 90s"
+                descriptions={["A former tenant, Nick Lindsay, who lived in the Westminster Apartments from 1991 to 1992 shared his memories of the building: \"I lived in the Westminster with my girlfriend, now wife, while I was attending Dalhousie. We have strong memories of it being a fine apartment—wooden floors, big windows, and little touches like the bathroom tile that looked very vintage.\" He went on to recall the elevator, which seems to be one of the most iconic aspects of the building to date, saying, \"One thing that always comes up when talking about the place is the elevator; it had this quirky habit of stopping just short of the floor—by an inch or two—especially if you were carrying something heavy or if there were a few people in it.\" Reflecting on the heating, he explained, \"The apartments didn’t have thermostats, so the heat was set to keep the basement apartments comfortable. We sometimes had the windows wide open on bitterly cold February days.\" (Former Tenant, personal communication, April 14, 2025) "]}
+                figures={
+                  [
+                    <Figure key="leaves-fig-7" src="img/leaves/fig-7.jpg" alt="Figure 7" caption="Clifford, Amber. Photograph front door, unit 15, 2025." />
+                  ]}
+              />
+            </TreeNode>
+
+            <TreeNode label="9">
+              <ModalContent
+                title="1935 – 2003 - Dawson Family"
+                descriptions={[
+                  "The Westminster Apartments is the type of building where tenants tend to stay for long periods of time. One example of this is the Dawson family, who moved into the building in 1935. The family included Estella and Peter Dawson and their two children. One of whom, Jessie Dawson, remained in the unit until at least 2003, and likely longer (The Evening Mail, March 8, 1920, p. 9)."]}
+              />
+            </TreeNode>
+            <TreeNode label="11">
+              <ModalContent
+                title="Bibliography"
+                descriptions={[
+                  "Busch v. The Eastern Trust Co. et al. 1928 CanLII 84 (SCC), [1928] SCR 479. ", "Chisholm, Tim. Personal communication with the author, April 14, 2025. ", "Church of All Saints. “History of the Cathedral.” Last modified April 2023. https://www.cathedralchurchofallsaints.com/history/pages/20th-century. ", "Clifford, Amber. 2025. Photograph of Angel and Baby. ", "2025. Photograph of the Turnbull Elevator, March 10, 2025. ", "2025. Photograph of Westminster Apartments' original elevator, March 2025. Halifax, Nova Scotia. ", "2025. Photograph front door, unit 15. ", "2025. Photograph of sealed laundry dumbwaiter at the Westminster Apartments, March 10, 2025. Halifax, Nova Scotia. ", "Cobden, Michael. 2006. Holocaust Survivor: The Story of Simon Spatz. Halifax: Southwest Properties. ", "Dictionary of Architects in Canada. “Dolphin & Doswell.” Last modified March 2024. https://web.archive.org/web/20240320081115/https://dictionaryofarchitectsincanada.org/node/2533. ", "The Evening Mail. 1920. “New Westminster Apartment Advertisement.” March 8, 1920. Halifax, Nova Scotia. ", "“Green, Benjamin.” The Canadian Encyclopedia. Last modified April 2023. https://www.biographi.ca/en/bio/green_benjamin_4E.html. ", "Halifax Municipal Archives. 1949. Deed of Sale: Harriette v. Cleveland Realty Group, January 5, 1949. Book 1079, Page 179. Halifax, Nova Scotia. ", "1976. Harrington House. Photograph by Pam Collins. CR30K-1-36.109. Halifax, Nova Scotia. ", "[ca. 1970]. Hfx [Halifax] Infirmary Complex [aerial photograph]. Series: Aerial Photographs and Streetscapes, 102-111-4-6.20. Photograph by Nova Scotia Communications and Information Centre. Accessed April 14, 2025. https://archive.halifax.ca/archive/final/portal.aspx?lang=en-US. ", "Halifax Municipal Archives. Blueprints for Westminster Apartments, May 1920. Church and Morris Streets, Halifax, Nova Scotia. Dolphin and Doswell, Architects, Montreal and Toronto. ", "Library and Archives Canada. Bankruptcy Filing, RG13-A-2, Volume 272, File 1922–1923. Library and Archives Canada, Ottawa, Ontario. ", "McGuigan, Peter. 2003. “The Westminster Apartments (1920–2003).” Southender, October 2003. ", "The Nova Scotian. December 15, 1905, p. 1. Reel 8118. Nova Scotia Archives, Halifax, Nova Scotia. ", "Nova Scotia Archives. Album 36, Photo 44, neg. no. N-5795. Before 1905. Nova Scotia Archives, Halifax, Nova Scotia. ", "Land Grants, Book 22, PANS MFM #13044. Page 59. Nova Scotia Archives, Halifax, Nova Scotia. ", "Map Collection: F/240, 1827. Nova Scotia Archives, Halifax, Nova Scotia. ", "Map Collection: V6 240 Halifax, Nova Scotia, 1749. Nova Scotia Archives, Halifax, Nova Scotia. ", "Morning Herald, May 17, 1898, p. 3. Reel 6724. Nova Scotia Archives, Halifax, Nova Scotia. ", "Photographic Collection: Places: Halifax, Halifax Co.: General Views: Looking South from Bellevue House. Ca. 1900. Nova Scotia Archives, Halifax, Nova Scotia. ", "Photographic Collection: Places: Halifax, Halifax Co.: General Views: View from Bellevue House (1872) Looking Towards McNabb Island and Maugher's Beach. Nova Scotia Archives, Halifax, Nova Scotia. ", "Will of Benjamin Green, Reel #19406 - G104. Nova Scotia Archives, Halifax, Nova Scotia. ", "Notman Studio. Ca. 1890. Nova Scotia Archives, Accession No. 1983-310 No. 77325. Nova Scotia Archives, Halifax, Nova Scotia. ", "Nova Scotia Archives, Accession No. 1983-310 No. 2451. Nova Scotia Archives, Halifax, Nova Scotia. ", "Nova Scotia Vital Statistics. “Marriage Certificate of Charles John Falconer and Sheila Ann Knickle.” May 14, 1945. Halifax, Halifax County. Registration Number: 131442. Accessed April 14, 2025. [Insert website URL here if applicable]. ", "Southwest Properties. 2021. Renovation of the Year Submission: The Westminster Apartments, 5300 Morris Street, Halifax, NS. Halifax: Southwest Properties. ", "Spatz, Jim. 2025. Handwritten note to the author, March 7, 2025. ", "The Halifax Herald. March 26, 1894, p. 1. Halifax, Nova Scotia, Canada. ", "Wedge, Ben. Personal communication with the author, April 14, 2025."
+                ]}
+              />
+            </TreeNode>
           </div>
         </div>
       </div>
@@ -29,12 +144,12 @@ function App() {
           a Brief Land, Building, and Community History Timeline
         </h2>
         <h3 className="text-md font-semibold px-4 py-2 w-full text-white text-center">
-          Click a bubble to learn more.
+          This is a heritage tree! The roots contain information about the property and the land where the Westminster Apartments stand. The trunk showcases details and photos of the building itself. Finally, the leaves hold cherished memories and accounts from past residents, along with some fascinating vital statistics and newspaper clippings!
         </h3>
       </div>
 
       {/* trunk */}
-      <div className="w-full h-[35%] flex justify-center">
+      <div className="w-full h-[30%] flex justify-center mb-16">
         <div className="w-[20%] flex flex-col justify-center max-h-full">
           <DiagonalRow first={
             <TreeNode label="16">
@@ -257,131 +372,129 @@ function App() {
         </div>
       </div>
       {/* roots */}
-      <div className="w-full h-[30%] px-40 my-8">
-        <div className="flex flex-col items-center space-y-4">
-          {/* roots row 1 */}
-          <div className="flex flex-row justify-between w-full">
-            <TreeNode label="1">
-              <ModalContent
-                title="Land Acknowledgement"
-                descriptions={["The Mi'kmaq have been in Nova Scotia since time immemorial. Halifax was originally referred to as Kjipuktuk by the Mi'kmaq people."]}
-              />
-            </TreeNode>
-            <TreeNode label="3">
-              <ModalContent
-                title="1827 Map of Halifax"
-                descriptions={
-                  [
-                    "The map from 1827 shows Halifax and gives us some context. The street at the bottom is the road to Fort Massey Church (presently known as Queen Street). Fort Massey is an important landmark, as Church Street eventually joins St. Luke's and Fort Massey. Based on this, we can infer the location where St. Luke's would be built, although this map does not show any buildings at that time. A disclaimer here: this map may not be entirely accurate since Tobin Street does not appear, even though it is visible on the earlier 1749 map, although unnamed.",
-                    "Although no buildings are shown, some may have been constructed. By 1758, the land that included Lot 8 was under the ownership of Benjamin Green, though whether he purchased it or if it was redistributed to him by the crown is unclear."
-                  ]}
-                figures={[<Figure key="roots-fig-2" src="img/roots/fig-2.png" alt="Figure 2" />]}
-              />
-            </TreeNode>
-            <TreeNode label="5">
-              <ModalContent
-                title="Saint Luke's Cathedral"
-                descriptions={
-                  [
-                    "By 1844, Saint Luke's Chapel of Ease was built on this land. A chapel of ease is a church constructed in a more convenient location. The official Saint Luke's Cathedral was erected sometime between 1847 and 1848, depending on the source. St. Luke's was an Anglican church that stood in this spot for 57 years before it burned down in 1905.",
-                    "The church can be seen in the background of this photo, taken in 1872 from the Belle Vue Tennis Court, prior to December 1905."
-                  ]}
-                figures={[<Figure key="roots-fig-4" src="img/roots/fig-4.png" alt="Figure 4" caption={"(Nova Scotia Archives, \"Places: Halifax, Halifax Co.: Houses: Belle Vue: Tennis Courts\")"} />]}
-              />
-            </TreeNode>
-            <TreeNode label="7">
-              <ModalContent
-                title="St. Luke's on Clear Day (1872)"
-                descriptions={
-                  [
-                    "This is a photo taken from the Belle Vue Estate in 1872 with the church in the back right."
-                  ]}
-                figures={[<Figure key="roots-fig-6" src="img/roots/fig-6.png" alt="Figure 6" caption={"(Nova Scotia Archives, Photographic Collection: Places: Halifax, Halifax Co.: General Views: View from Bellevue House (1872) Looking Towards McNabb Island and Maugher's Beach) "} />]}
-              />
-            </TreeNode>
+      <div className="w-[50%] h-[30%] my-8 flex flex-col items-center space-y-8">
+        {/* roots row 1 */}
+        <div className="flex flex-row justify-between w-full">
+          <TreeNode label="1">
+            <ModalContent
+              title="Land Acknowledgement"
+              descriptions={["The Mi'kmaq have been in Nova Scotia since time immemorial. Halifax was originally referred to as Kjipuktuk by the Mi'kmaq people."]}
+            />
+          </TreeNode>
+          <TreeNode label="3">
+            <ModalContent
+              title="1827 Map of Halifax"
+              descriptions={
+                [
+                  "The map from 1827 shows Halifax and gives us some context. The street at the bottom is the road to Fort Massey Church (presently known as Queen Street). Fort Massey is an important landmark, as Church Street eventually joins St. Luke's and Fort Massey. Based on this, we can infer the location where St. Luke's would be built, although this map does not show any buildings at that time. A disclaimer here: this map may not be entirely accurate since Tobin Street does not appear, even though it is visible on the earlier 1749 map, although unnamed.",
+                  "Although no buildings are shown, some may have been constructed. By 1758, the land that included Lot 8 was under the ownership of Benjamin Green, though whether he purchased it or if it was redistributed to him by the crown is unclear."
+                ]}
+              figures={[<Figure key="roots-fig-2" src="img/roots/fig-2.png" alt="Figure 2" />]}
+            />
+          </TreeNode>
+          <TreeNode label="5">
+            <ModalContent
+              title="Saint Luke's Cathedral"
+              descriptions={
+                [
+                  "By 1844, Saint Luke's Chapel of Ease was built on this land. A chapel of ease is a church constructed in a more convenient location. The official Saint Luke's Cathedral was erected sometime between 1847 and 1848, depending on the source. St. Luke's was an Anglican church that stood in this spot for 57 years before it burned down in 1905.",
+                  "The church can be seen in the background of this photo, taken in 1872 from the Belle Vue Tennis Court, prior to December 1905."
+                ]}
+              figures={[<Figure key="roots-fig-4" src="img/roots/fig-4.png" alt="Figure 4" caption={"(Nova Scotia Archives, \"Places: Halifax, Halifax Co.: Houses: Belle Vue: Tennis Courts\")"} />]}
+            />
+          </TreeNode>
+          <TreeNode label="7">
+            <ModalContent
+              title="St. Luke's on Clear Day (1872)"
+              descriptions={
+                [
+                  "This is a photo taken from the Belle Vue Estate in 1872 with the church in the back right."
+                ]}
+              figures={[<Figure key="roots-fig-6" src="img/roots/fig-6.png" alt="Figure 6" caption={"(Nova Scotia Archives, Photographic Collection: Places: Halifax, Halifax Co.: General Views: View from Bellevue House (1872) Looking Towards McNabb Island and Maugher's Beach) "} />]}
+            />
+          </TreeNode>
 
-            <TreeNode label="9">
-              <ModalContent
-                title="1890"
-                descriptions={
-                  [
-                    "Another interior shot c. 1890."
-                  ]}
-                figures={[<Figure key="roots-fig-8" src="img/roots/fig-8.png" alt="Figure 8" caption={"(Notman Studio, Nova Scotia Archives, accession no. 1983-310 no. 2451)"} />]}
-              />
-            </TreeNode>
+          <TreeNode label="9">
+            <ModalContent
+              title="1890"
+              descriptions={
+                [
+                  "Another interior shot c. 1890."
+                ]}
+              figures={[<Figure key="roots-fig-8" src="img/roots/fig-8.png" alt="Figure 8" caption={"(Notman Studio, Nova Scotia Archives, accession no. 1983-310 no. 2451)"} />]}
+            />
+          </TreeNode>
 
-            <TreeNode label="11">
-              <ModalContent
-                title="'Burned,' - 1905"
-                descriptions={
-                  [
-                    "On December 14th, 1905, at 1:00 AM, St. Luke's fire alarm went off, signaling a fire. By 3:00 AM, the church's steeple had collapsed, and the fire eventually burned itself out. Miraculously, no one was killed, but the fire was believed to be incendiary—likely caused by arson. Further research needs to be done into whether an investigation was open and if anyone was subsequently charged.",
-                    "Following the fire, All Saint's Cathedral was built about 500m west of the remains of St. Luke's as a replacement. It is likely that the lot remained vacant until 1920, when the Westminster Apartments were constructed."
-                  ]}
-                figures={[<Figure key="roots-fig-10" src="img/roots/fig-10.jpg" alt="Figure 10" />]}
-              />
-            </TreeNode>
-          </div>
-          {/* roots row 2 */}
-          <div className="flex flex-row justify-evenly w-full">
-            <TreeNode label="2">
-              <ModalContent
-                title="1749 Map of South Suburbs, in Halifax."
-                descriptions={
-                  [
-                    "The earliest available records of Halifax date back to 1749. The image above shows a map of the South Suburbs of Halifax from that year. By cross-referencing this map with modern Google Maps, it appears that Church Street likely ran through Lots 6 and 7, which were originally allotted to Robert Davis and John Butler, respectively.",
-                    "It's important to note that neither Church Street nor Harvey Street existed at the time, so this is an educated guess based on the available records.",
-                    "The lots of greatest interest are Lots 8 and 9, as these are likely where St. Luke's Cathedral was eventually built.",
-                    "While the land was initially allotted to Davis and Butler, this does not necessarily mean they settled on the land. This distinction is important when analyzing later maps of the area."
-                  ]}
-                figures={[<Figure key="roots-fig-1" src="img/roots/fig-1.png" alt="Figure 1" />]}
-              />
-            </TreeNode>
-            <TreeNode label="4">
-              <ModalContent
-                title="After Benjamin Green, Before St. Luke's (1772-1827)"
-                descriptions={
-                  [
-                    "Benjamin Green was Nova Scotia's first treasurer and owned many properties throughout the province. When he died in 1772, his property was not divided among his children until 1827, due to the lack of specific instructions in his will. His heirs drew straws for the land, and his son, Henry Green, received Lots 8 and 9.",
-                    "The probate record from July 2nd, 1827, shows the division of Green's properties. The properties marked 'H' refer to Lots 8 and 9, inherited by Henry Green."
-                  ]}
-                figures={[<Figure key="roots-fig-3" src="img/roots/fig-3.png" alt="Figure 3" caption="Taken from Benjamin Green's Will, 1827." />]}
-              />
-            </TreeNode>
-            <TreeNode label="6">
-              <ModalContent
-                title="St. Luke's in Winter (c. 1900)"
-                descriptions={
-                  [
-                    "This is another image of St. Luke's from the Belle Vue Estate, taken around 1900, roughly five years before it burned down. "
-                  ]}
-                figures={[<Figure key="roots-fig-5" src="img/roots/fig-5.png" alt="Figure 5" caption="(Nova Scotia Archives, Photographic Collection: Places: Halifax, Halifax Co.: General Views: Looking South from Bellevue House, c. 1900)" />]}
-              />
-            </TreeNode>
-            <TreeNode label="8">
-              <ModalContent
-                title=""
-                descriptions={
-                  [
-                    "This is an interior view of the church c. pre-1905"
-                  ]}
-                figures={[<Figure key="roots-fig-7" src="img/roots/fig-7.png" alt="Figure 7" caption="(Nova Scotia Archives, Album 36, photo 44, neg. no. N-5795, before 1905)" />]}
-              />
-            </TreeNode>
-            <TreeNode label="10">
-              <ModalContent
-                title="Wedding Ceremony"
-                descriptions={
-                  [
-                    "This is an interior shot of a wedding ceremony, before 1905."
-                  ]}
-                figures={[<Figure key="roots-fig-9" src="img/roots/fig-9.png" alt="Figure 9" caption="(Nova Scotia Archives, Album 36, photo 44, neg. no. N-5795, before 1905)" />]}
+          <TreeNode label="11">
+            <ModalContent
+              title="'Burned,' - 1905"
+              descriptions={
+                [
+                  "On December 14th, 1905, at 1:00 AM, St. Luke's fire alarm went off, signaling a fire. By 3:00 AM, the church's steeple had collapsed, and the fire eventually burned itself out. Miraculously, no one was killed, but the fire was believed to be incendiary—likely caused by arson. Further research needs to be done into whether an investigation was open and if anyone was subsequently charged.",
+                  "Following the fire, All Saint's Cathedral was built about 500m west of the remains of St. Luke's as a replacement. It is likely that the lot remained vacant until 1920, when the Westminster Apartments were constructed."
+                ]}
+              figures={[<Figure key="roots-fig-10" src="img/roots/fig-10.jpg" alt="Figure 10" />]}
+            />
+          </TreeNode>
+        </div>
+        {/* roots row 2 */}
+        <div className="flex flex-row justify-evenly w-full">
+          <TreeNode label="2">
+            <ModalContent
+              title="1749 Map of South Suburbs, in Halifax."
+              descriptions={
+                [
+                  "The earliest available records of Halifax date back to 1749. The image above shows a map of the South Suburbs of Halifax from that year. By cross-referencing this map with modern Google Maps, it appears that Church Street likely ran through Lots 6 and 7, which were originally allotted to Robert Davis and John Butler, respectively.",
+                  "It's important to note that neither Church Street nor Harvey Street existed at the time, so this is an educated guess based on the available records.",
+                  "The lots of greatest interest are Lots 8 and 9, as these are likely where St. Luke's Cathedral was eventually built.",
+                  "While the land was initially allotted to Davis and Butler, this does not necessarily mean they settled on the land. This distinction is important when analyzing later maps of the area."
+                ]}
+              figures={[<Figure key="roots-fig-1" src="img/roots/fig-1.png" alt="Figure 1" />]}
+            />
+          </TreeNode>
+          <TreeNode label="4">
+            <ModalContent
+              title="After Benjamin Green, Before St. Luke's (1772-1827)"
+              descriptions={
+                [
+                  "Benjamin Green was Nova Scotia's first treasurer and owned many properties throughout the province. When he died in 1772, his property was not divided among his children until 1827, due to the lack of specific instructions in his will. His heirs drew straws for the land, and his son, Henry Green, received Lots 8 and 9.",
+                  "The probate record from July 2nd, 1827, shows the division of Green's properties. The properties marked 'H' refer to Lots 8 and 9, inherited by Henry Green."
+                ]}
+              figures={[<Figure key="roots-fig-3" src="img/roots/fig-3.png" alt="Figure 3" caption="Taken from Benjamin Green's Will, 1827." />]}
+            />
+          </TreeNode>
+          <TreeNode label="6">
+            <ModalContent
+              title="St. Luke's in Winter (c. 1900)"
+              descriptions={
+                [
+                  "This is another image of St. Luke's from the Belle Vue Estate, taken around 1900, roughly five years before it burned down. "
+                ]}
+              figures={[<Figure key="roots-fig-5" src="img/roots/fig-5.png" alt="Figure 5" caption="(Nova Scotia Archives, Photographic Collection: Places: Halifax, Halifax Co.: General Views: Looking South from Bellevue House, c. 1900)" />]}
+            />
+          </TreeNode>
+          <TreeNode label="8">
+            <ModalContent
+              title=""
+              descriptions={
+                [
+                  "This is an interior view of the church c. pre-1905"
+                ]}
+              figures={[<Figure key="roots-fig-7" src="img/roots/fig-7.png" alt="Figure 7" caption="(Nova Scotia Archives, Album 36, photo 44, neg. no. N-5795, before 1905)" />]}
+            />
+          </TreeNode>
+          <TreeNode label="10">
+            <ModalContent
+              title="Wedding Ceremony"
+              descriptions={
+                [
+                  "This is an interior shot of a wedding ceremony, before 1905."
+                ]}
+              figures={[<Figure key="roots-fig-9" src="img/roots/fig-9.png" alt="Figure 9" caption="(Nova Scotia Archives, Album 36, photo 44, neg. no. N-5795, before 1905)" />]}
 
-              />
-            </TreeNode>
+            />
+          </TreeNode>
 
-          </div>
         </div>
       </div>
     </div >
