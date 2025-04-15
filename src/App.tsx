@@ -57,6 +57,8 @@ function App() {
                   ]}
                 figures={
                   [
+                    <Figure key="leaves-fig-7" src="img/leaves/fig-7.jpg" alt="Figure 7" caption="Clifford, Amber. Photograph front door, unit 15, 2025." />,
+
                     <Figure key="leaves-fig-8-2" src="img/leaves/fig-8-2.jpg" alt="Figure 8.2" caption="Clifford, Amber. Photograph of Angel and Baby, 2025." />
                   ]}
               />
@@ -111,10 +113,6 @@ function App() {
               <ModalContent
                 title="Westminster in the 90s"
                 descriptions={["A former tenant, Nick Lindsay, who lived in the Westminster Apartments from 1991 to 1992 shared his memories of the building: \"I lived in the Westminster with my girlfriend, now wife, while I was attending Dalhousie. We have strong memories of it being a fine apartment—wooden floors, big windows, and little touches like the bathroom tile that looked very vintage.\" He went on to recall the elevator, which seems to be one of the most iconic aspects of the building to date, saying, \"One thing that always comes up when talking about the place is the elevator; it had this quirky habit of stopping just short of the floor—by an inch or two—especially if you were carrying something heavy or if there were a few people in it.\" Reflecting on the heating, he explained, \"The apartments didn’t have thermostats, so the heat was set to keep the basement apartments comfortable. We sometimes had the windows wide open on bitterly cold February days.\" (Former Tenant, personal communication, April 14, 2025) "]}
-                figures={
-                  [
-                    <Figure key="leaves-fig-7" src="img/leaves/fig-7.jpg" alt="Figure 7" caption="Clifford, Amber. Photograph front door, unit 15, 2025." />
-                  ]}
               />
             </TreeNode>
 
