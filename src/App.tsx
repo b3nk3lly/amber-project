@@ -27,6 +27,7 @@ function App() {
             <TreeNode label="4">
               <ModalContent
                 title="1927 - Alcohol Fire"
+                descriptions={["Interestingly, in 1927, an explosion and subsequent fire occurred due to alcohol. While the building itself didn’t burn down, staying true to its earlier advertising, all of the woman's possessions were destroyed. This incident took place during Prohibition in Nova Scotia; however, I could not find any record of Miss McGuire being charged."]}
                 figures={
                   [
                     <Figure key="leaves-fig-3" src="img/leaves/fig-4-1.jpg" alt="Figure 4.1" caption="The Evening Mail, (Halifax, NS), June 15, 1927, 10." />,
